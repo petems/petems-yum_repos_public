@@ -1,0 +1,14 @@
+{
+  "name": "petems-yum_repos_public",
+  "version": "0.1.0",
+  "author": "petems",
+  "summary": "A collection of facts for reporting yumrepos that are public.",
+  "license": "Apache 2.0",
+  "source": "https://github.com/petems/petems-yum_repos_public",
+  "project_page": "https://github.com/petems/petems-yum_repos_public",
+  "issues_url": "https://github.com/petems/petems-yum_repos_public/issues",
+  "dependencies": [
+    {"name":"petems-stdlib","version_requirement":">= 1.0.0"}
+  ]
+}
+
