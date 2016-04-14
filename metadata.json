@@ -9,7 +9,7 @@
   "issues_url": "https://github.com/petems/petems-yum_repos_public/issues",
   "dependencies": [
     {
-      "name": "petems-stdlib",
+      "name": "puppetlabs-stdlib",
       "version_requirement": ">= 1.0.0"
     }
   ]
