@@ -1,6 +1,6 @@
 {
   "name": "petems-yum_repos_public",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "author": "petems",
   "summary": "A collection of facts for reporting yumrepos that are public.",
   "license": "Apache 2.0",
