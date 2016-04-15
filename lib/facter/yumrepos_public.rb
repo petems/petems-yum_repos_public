@@ -32,6 +32,6 @@ Facter.add(:yumrepos_public) do
     end
   end
   setcode do
-    public_repos
+    public_repos unless public_repos.empty?
   end
 end
