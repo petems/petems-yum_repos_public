@@ -1,10 +1,9 @@
-# Fact: java_version
+# Fact: yumrepos_public
 #
-# Purpose: get full java version string
+# Purpose: get public yumrepos
 #
 # Resolution:
-#   Tests for presence of java, returns nil if not present
-#   returns output of "java -version" and splits on \n + '"'
+#   Gives a list of all yum repos that connect to the main public Oracle Repos ('public-yum.oracle.com')
 #
 # Caveats:
 #   none
@@ -15,7 +14,7 @@ Facter.add(:yumrepos_public) do
 
   public_urls = /public-yum.oracle.com/
 
-  confine :osfamily => %w{RedHat}
+  confine :operatingsystem => %w{OracleLinux}
   yum_repo_yaml = Facter::Util::Resolution.exec('puppet resource yumrepo -y')
   yum_repo_hash = YAML.load yum_repo_yaml
   list_of_repos = yum_repo_hash['yumrepo']
